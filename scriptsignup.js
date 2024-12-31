@@ -158,8 +158,6 @@ fetch('passwordsdata.json', {
 .catch(error => {
     console.error('Error saving JSON:', error);
     errMsg.textContent = "Error saving data.";
-});
-
  */
 }
 
