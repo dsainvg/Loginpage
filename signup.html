@@ -28,6 +28,9 @@
         .container h2 {
             color: #fff;
         }
+        .container h4 {
+            color: #ff6f61;
+        }
         .container input {
             width: 90%;
             padding: 10px;
@@ -52,16 +55,18 @@
             background: #a64d79;
         }
     </style>
+    <script type="text/javascript" src="scriptsignup.js" defer></script>
 </head>
 <body>
     <div class="container">
         <h2>Sign Up</h2>
-        <input type="text" placeholder="Name" required>
-        <input type="text" placeholder="User ID" required>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <input type="password" placeholder="Confirm Password" required>
-        <button type="submit">Sign Up</button>
+        <h4 id="err-msg"></h4>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="user-id" placeholder="User ID" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+        <button onclick="signUp()" type="submit">Sign Up</button>
         <button type="button" onclick="window.location.href='index.html'">Sign In</button>
     </div>
 </body>
