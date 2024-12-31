@@ -62,6 +62,30 @@ function check() {
         errMsg.textContent = "Please enter both username and password.";
         return;
     }
+
+    try{
+        let storedData = localStorage.getItem('userData');
+        if (storedData) { 
+            let data = JSON.parse(storedData);
+            const user = data.users.find(user => user.userid === username);
+        if (!user) {
+            errMsg.textContent = "User not found.";
+            return;
+        }
+        const hashedPassword = hash(password, user.hash);
+        if (hashedPassword !== user.password) {
+            errMsg.textContent = "Incorrect password.";
+            return;
+        }
+        errMsg.textContent = "Login successful!";
+        return;
+        }
+        
+    }
+    catch(error){
+        console.error('t7dfyg');
+    }
+    
     fetch('passwordsdata.json')
       .then(response => response.json())
       .then(data => {

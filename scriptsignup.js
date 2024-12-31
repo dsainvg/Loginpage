@@ -116,7 +116,7 @@ function signUp(){
         const salt = saltgen();
         const hashedPassword = hash(password, salt);
 
-        change(data,{
+        data.users.push({
             name: name,
             userid: userId,
             email: email,
@@ -124,64 +124,15 @@ function signUp(){
             hash : salt
         });
         
-
+        localStorage.setItem('userData', JSON.stringify(data));
+        console.log('Edited JSON:', data); 
+        errMsg.textContent = "Sign up successful!";
         
     })
 .catch(error => {
         console.error('Error fetching JSON:', error);
 });
 
-/* 
-
-dataren.users.push({
-    name: name,
-    userid: userId,
-    email: email,
-    password: hashedPassword,
-    hash : salt
-});
-
-fetch('passwordsdata.json', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data)
-})
-.then(response => {
-    if (response.ok) {
-        errMsg.textContent = "Sign up successful!";
-    } else {
-        errMsg.textContent = "Error saving data.";
-    }
-})
-.catch(error => {
-    console.error('Error saving JSON:', error);
-    errMsg.textContent = "Error saving data.";
- */
-}
-
-function change(newData,user){
-    newData.users.push(user);
-    console.log(newData);
-
-    fetch('passwordsdata.json', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(newData)
-    })
-    .then(response => {
-        if (response.ok) {
-            errMsg.textContent = "Sign up successful!";
-        } else {
-            errMsg.textContent = "Error saving data.";
-        }
-    })
-    .catch(error => {
-        console.error('Error saving JSON:', error);
-        errMsg.textContent = "Error saving data.";
-    });
 
 }
+
