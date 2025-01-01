@@ -129,9 +129,9 @@ function signUp(){
         errMsg.textContent = "Sign up successful!";
         
     })
-.catch(error => {
+    .catch(error => {
         console.error('Error fetching JSON:', error);
-});
+    });
 
 
 }
