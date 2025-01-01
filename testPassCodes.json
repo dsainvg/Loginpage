@@ -1,0 +1,124 @@
+{
+  "users": [
+    {
+      "userid": "JDoe",
+      "password": "Password1!"
+    },
+    {
+      "userid": "JSmith",
+      "password": "Password2@"
+    },
+    {
+      "userid": "AJohnson",
+      "password": "Password3#"
+    },
+    {
+      "userid": "BBrown",
+      "password": "Password4$"
+    },
+    {
+      "userid": "CDavis",
+      "password": "Password5%"
+    },
+    {
+      "userid": "DWilson",
+      "password": "Password6^"
+    },
+    {
+      "userid": "EWhite",
+      "password": "Password7&"
+    },
+    {
+      "userid": "FHarris",
+      "password": "Password8*"
+    },
+    {
+      "userid": "GClark",
+      "password": "Password9("
+    },
+    {
+      "userid": "HLewis",
+      "password": "Password10)"
+    },
+    {
+      "userid": "IWalker",
+      "password": "Password11!"
+    },
+    {
+      "userid": "JHall",
+      "password": "Password12@"
+    },
+    {
+      "userid": "KYoung",
+      "password": "Password13#"
+    },
+    {
+      "userid": "LKing",
+      "password": "Password14$"
+    },
+    {
+      "userid": "MScott",
+      "password": "Password15%"
+    },
+    {
+      "userid": "NGreen",
+      "password": "Password16^"
+    },
+    {
+      "userid": "OAdams",
+      "password": "Password17&"
+    },
+    {
+      "userid": "PBaker",
+      "password": "Password18*"
+    },
+    {
+      "userid": "QCarter",
+      "password": "Password19("
+    },
+    {
+      "userid": "RMitchell",
+      "password": "Password20)"
+    },
+    {
+      "userid": "SPerez",
+      "password": "Password21!"
+    },
+    {
+      "userid": "TRoberts",
+      "password": "Password22@"
+    },
+    {
+      "userid": "UTurner",
+      "password": "Password23#"
+    },
+    {
+      "userid": "VPhillips",
+      "password": "Password24$"
+    },
+    {
+      "userid": "WCampbell",
+      "password": "Password25%"
+    },
+    {
+      "userid": "XEvans",
+      "password": "Password26^"
+    },
+    {
+      "userid": "YEdwards",
+      "password": "Password27&"
+    },
+    {
+      "userid": "ZCollins",
+      "password": "Password28*"
+    },
+    {
+      "userid": "AStewart",
+      "password": "Password29("
+    },
+    {
+      "userid": "BMorris",
+      "password": "Password30)"
+    }
+  ]
+}

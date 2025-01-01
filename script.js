@@ -1,4 +1,4 @@
-
+const cont = document.getElementById('container');
 const encoder = new TextEncoder();
 
 function sortByNthElement(arr, n) {
@@ -77,7 +77,9 @@ function check() {
             errMsg.textContent = "Incorrect password.";
             return;
         }
-        errMsg.textContent = "Login successful!";
+        
+        cont.innerHTML =   `<h2>Welcome back,${user.name} We're excited to have you on board. Feel free to explore and let us know if you need any assistance.</h2>
+                            <button onclick="comeback()" type="submit">Switch User</button>`;
         return;
         }
         
@@ -99,7 +101,9 @@ function check() {
             errMsg.textContent = "Incorrect password.";
             return;
         }
-        errMsg.textContent = "Login successful!";
+        
+        cont.innerHTML =   `<h2>Welcome back,${user.name} We're excited to have you on board. Feel free to explore and let us know if you need any assistance.</h2>
+                            <button onclick="comeback()" type="submit">Switch User</button>`;
         
       })
       .catch(error => {
@@ -108,4 +112,15 @@ function check() {
     
     
     
+}
+
+function comeback(){
+    cont.innerHTML =   `<div id="container" class="container">
+                            <h2>Sign In</h2>
+                            <h4 id="err-msg"></h4>
+                            <input type="text" placeholder="Username" required>
+                            <input type="password" placeholder="Password" required>
+                            <button onclick="check()" type="submit">Sign In</button>
+                            <button type="button" onclick="window.location.href='signup.html'">Sign Up</button>
+                        </div>`;
 }
