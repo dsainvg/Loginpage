@@ -115,12 +115,10 @@ function check() {
 }
 
 function comeback(){
-    cont.innerHTML =   `<div id="container" class="container">
-                            <h2>Sign In</h2>
-                            <h4 id="err-msg"></h4>
-                            <input type="text" placeholder="Username" required>
-                            <input type="password" placeholder="Password" required>
-                            <button onclick="check()" type="submit">Sign In</button>
-                            <button type="button" onclick="window.location.href='signup.html'">Sign Up</button>
-                        </div>`;
+    cont.innerHTML =   `<h2>Sign In</h2>
+                        <h4 id="err-msg"></h4>
+                        <input type="text" placeholder="Username" required>
+                        <input type="password" placeholder="Password" required>
+                        <button onclick="check()" type="submit">Sign In</button>
+                        <button type="button" onclick="window.location.href='signup.html'">Sign Up</button>`;
 }
